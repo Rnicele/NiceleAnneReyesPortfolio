@@ -1,6 +1,7 @@
 import styles from "../styles/home.module.css";
 import HomeButton from "./HomeButton";
-export default function Home() {
+import ScrollButton from "./ScrollButton";
+export default function Home({ currentPage, setCurrentPage }) {
   return (
     <div className={styles.introduction}>
       <div className={styles.leftIntro}>
@@ -9,6 +10,7 @@ export default function Home() {
         <span className={styles.thirdText}>Web Developer</span>
       </div>
       <HomeButton />
+      <ScrollButton currentPage={currentPage} setCurrentPage={setCurrentPage} />
     </div>
   );
 }

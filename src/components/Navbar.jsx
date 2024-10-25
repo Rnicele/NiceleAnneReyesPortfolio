@@ -1,13 +1,29 @@
-import { Link, useLocation } from "react-router-dom";
 import styles from "../styles/navbar.module.css";
-export default function Navbar() {
-  const location = useLocation();
+export default function Navbar({ currentPage, setCurrentPage }) {
   const path = [
-    { title: "Home", link: "/" },
-    { title: "About", link: "/about" },
-    { title: "Projects", link: "/projects" },
-    { title: "Contact", link: "/contact" },
+    { title: "Home", link: "/#", classLink: "", addClass: "homepage" },
+    {
+      title: "About",
+      link: "#about",
+      classLink: "#about",
+      addClass: "aboutpage",
+    },
+    {
+      title: "Projects",
+      link: "#projects",
+      classLink: "#projects",
+      addClass: "projectpage",
+    },
+    {
+      title: "Contact",
+      link: "#contact",
+      classLink: "#contact",
+      addClass: "contactpage",
+    },
   ];
+  function handleNavbar(navlink) {
+    setCurrentPage(navlink);
+  }
   return (
     <nav className={`${styles.navigator} navbar navbar-expand-lg `}>
       <button
@@ -25,14 +41,15 @@ export default function Navbar() {
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           {path.map((nav, key) => (
             <li key={key}>
-              <Link
-                to={nav.link}
+              <a
+                href={nav.link}
+                onClick={() => handleNavbar(nav.classLink)}
                 className={
-                  location.pathname === nav.link ? styles.activelink : ""
+                  currentPage === nav.classLink ? styles.activelink : ""
                 }
               >
                 {nav.title}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>

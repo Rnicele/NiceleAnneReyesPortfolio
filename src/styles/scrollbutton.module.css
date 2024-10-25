@@ -1,0 +1,20 @@
+.scrolldown {
+  position: absolute;
+  bottom: 50px;
+}
+
+.scrolldown img {
+  width: 40px;
+}
+
+@media (min-width: 320px) {
+  .scrolldown {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .scrolldown {
+    display: block !important;
+  }
+}

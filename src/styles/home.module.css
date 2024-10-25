@@ -1,7 +1,7 @@
 .introduction {
   height: 85vh;
   margin: 0 auto;
-
+  margin-bottom: 80px;
   width: 100%;
 }
 
@@ -64,5 +64,15 @@
 
   .secondText {
     font-size: 6em;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .introduction {
+    padding: 0 50px;
+  }
+
+  .secondText {
+    font-size: 7em;
   }
 }

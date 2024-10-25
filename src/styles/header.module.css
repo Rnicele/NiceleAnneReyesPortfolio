@@ -1,7 +1,12 @@
 .header {
   right: auto;
-  width: calc(100vw - 100px);
   display: inline-block;
+  position: fixed;
+  background-color: white;
+  width: 100vw;
+  padding: 50px 100px;
+  top: 0;
+  z-index: 1;
 }
 
 .logo {
