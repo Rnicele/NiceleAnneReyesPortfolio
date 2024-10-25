@@ -1,0 +1,68 @@
+.introduction {
+  height: 85vh;
+  margin: 0 auto;
+
+  width: 100%;
+}
+
+.firstText,
+.thirdText,
+.secondText {
+  display: block;
+}
+
+@media screen and (min-width: 320px) {
+  .introduction {
+    display: block;
+    align-content: center;
+  }
+
+  .leftIntro {
+    float: none;
+  }
+
+  .firstText,
+  .thirdText {
+    font-size: 2em;
+  }
+
+  .secondText {
+    font-size: 4em;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .firstText,
+  .thirdText {
+    font-size: 3em;
+  }
+
+  .secondText {
+    font-size: 5em;
+  }
+
+  .introduction {
+    display: inline-block;
+    align-content: center;
+  }
+}
+
+@media screen and (min-width: 991.99px) {
+  .introduction {
+    display: inline-block;
+    align-content: center;
+  }
+
+  .leftIntro {
+    float: left;
+  }
+
+  .firstText,
+  .thirdText {
+    font-size: 4em;
+  }
+
+  .secondText {
+    font-size: 6em;
+  }
+}

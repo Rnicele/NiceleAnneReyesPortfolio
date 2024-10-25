@@ -1,3 +1,14 @@
+import styles from "../styles/home.module.css";
+import HomeButton from "./HomeButton";
 export default function Home() {
-  return <h1>hello</h1>;
+  return (
+    <div className={styles.introduction}>
+      <div className={styles.leftIntro}>
+        <span className={styles.firstText}>Hello, I'm</span>
+        <span className={styles.secondText}>NICELE REYES</span>
+        <span className={styles.thirdText}>Web Developer</span>
+      </div>
+      <HomeButton />
+    </div>
+  );
 }
