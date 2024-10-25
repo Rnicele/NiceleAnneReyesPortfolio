@@ -1,0 +1,11 @@
+.header {
+  right: auto;
+  width: calc(100vw - 100px);
+  display: inline-block;
+}
+
+.logo {
+  width: 55px;
+  height: 34px;
+  float: left;
+}

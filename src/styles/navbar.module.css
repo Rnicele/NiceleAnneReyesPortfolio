@@ -1,0 +1,62 @@
+nav {
+  background-color: transparent !important;
+}
+
+.navigator {
+  text-align: right;
+  float: right;
+  padding: 0 !important;
+}
+
+.navigator ul {
+  list-style: none;
+  display: inline-flex;
+  margin: 0;
+}
+
+.navigator ul li {
+  font-size: 24px;
+  margin-left: 45px;
+}
+
+.navigator ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navigator ul li a.activelink {
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.navCollapseButton {
+  border: none !important;
+  padding: 0 !important;
+}
+
+.navCollapseButton:focus:not(:focus-visible) {
+  box-shadow: none;
+}
+
+.navCollapseButton span {
+  background-image: url("data:image/svg+xml,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+}
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}
