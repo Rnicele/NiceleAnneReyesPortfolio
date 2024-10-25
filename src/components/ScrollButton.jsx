@@ -2,8 +2,8 @@ import icon from "../assets/Down.png";
 import styles from "../styles/scrollbutton.module.css";
 export default function ScrollButton({ currentPage, setCurrentPage }) {
   function handleScroll() {
-    setCurrentPage("#about");
-    window.location.hash = "#about";
+    setCurrentPage("about");
+    window.location.pathname = currentPage;
   }
   return (
     <div className={styles.scrolldown} onClick={() => handleScroll()}>
