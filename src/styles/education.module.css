@@ -1,0 +1,97 @@
+.school {
+  position: relative;
+  top: -3em;
+  margin-left: 20px;
+  max-width: max-content;
+}
+
+.collegeName {
+  letter-spacing: 2px;
+  font-size: 28px;
+  margin: 0;
+  font-weight: 600;
+  max-width: fit-content;
+}
+
+.course {
+  line-height: 1.5em;
+  margin: 0;
+  font-weight: normal;
+  max-width: fit-content;
+}
+
+.batch {
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: normal;
+  max-width: max-content;
+}
+
+@media (min-width: 320px) {
+  .title {
+    letter-spacing: 3px;
+  }
+
+  .school {
+    top: -2em;
+    margin-left: 10px;
+  }
+
+  .collegeName {
+    font-size: 24px;
+    letter-spacing: 0px;
+  }
+
+  .course {
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+
+  .batch {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+}
+
+@media (min-width: 481px) {
+  .title {
+    letter-spacing: 6px;
+  }
+  .school {
+    top: -2.5em;
+  }
+  .collegeName {
+    letter-spacing: 2px;
+  }
+
+  .course,
+  .batch {
+    letter-spacing: 1px;
+  }
+}
+
+@media (min-width: 641px) {
+  .school {
+    top: -3em;
+  }
+
+  .collegeName {
+    font-size: 2em;
+  }
+
+  .course {
+    font-size: 1.2em;
+    max-width: 70%;
+  }
+
+  .batch {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 961px) {
+  .course {
+    font-size: 20px;
+  }
+}

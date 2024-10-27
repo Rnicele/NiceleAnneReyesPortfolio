@@ -1,0 +1,121 @@
+.moreInfo {
+  line-height: 0px;
+  position: relative;
+  max-width: max-content;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.location {
+  display: inline-flex;
+}
+
+.location h2 {
+  font-size: 24px;
+  margin: 0;
+  padding: 10px;
+  font-weight: normal;
+}
+
+.email {
+  display: inline-flex;
+}
+
+.email h2 {
+  font-size: 24px;
+  margin: 0;
+  padding: 10px;
+  font-weight: normal;
+}
+
+.phone {
+  display: inline-flex;
+}
+
+.phone h2 {
+  font-size: 24px;
+  margin: 0;
+  padding: 10px;
+  font-weight: normal;
+}
+
+@media (min-width: 320px) {
+  .moreInfo {
+    top: -2em;
+  }
+
+  .location h2,
+  .email h2,
+  .phone h2 {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .location img {
+    width: 31px;
+    height: 31px;
+    padding: 0;
+  }
+
+  .email img {
+    width: 31px;
+    height: 31px;
+    padding: 3px;
+  }
+
+  .phone img {
+    width: 31px;
+    height: 31px;
+    padding: 3px;
+  }
+}
+
+@media (min-width: 481px) {
+  .moreInfo {
+    top: -2.5em;
+  }
+
+  .location h2,
+  .email h2,
+  .phone h2 {
+    letter-spacing: 1px;
+  }
+}
+
+@media (min-width: 641px) {
+  .moreInfo {
+    top: -3em;
+  }
+
+  .location h2,
+  .email h2,
+  .phone h2 {
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  .location img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .email img {
+    width: 48px;
+    height: 48px;
+    padding: 5px;
+  }
+
+  .phone img {
+    width: 48px;
+    height: 48px;
+    padding: 5px;
+  }
+}
+
+@media (min-width: 961px) {
+  .location h2,
+  .email h2,
+  .phone h2 {
+    font-size: 20px;
+  }
+}

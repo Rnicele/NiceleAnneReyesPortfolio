@@ -1,0 +1,133 @@
+.skills {
+  width: 50%;
+}
+
+.skills h1 {
+  font-weight: bold;
+  font-size: 4em;
+  opacity: 0.1;
+  letter-spacing: 6px;
+}
+
+.skill {
+  display: block;
+  line-height: 1.5em;
+  margin: 0;
+  font-weight: normal;
+  max-width: fit-content;
+}
+
+.frontend {
+  letter-spacing: 2px;
+  font-size: 28px;
+  margin: 0;
+  font-weight: 600;
+  max-width: fit-content;
+}
+
+.skillsInfo {
+  position: relative;
+  top: -3em;
+  margin-left: 20px;
+  max-width: max-content;
+}
+
+.listskill {
+  height: 175px;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 9px;
+}
+
+.otherskill {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 320px) {
+  .skills {
+    width: 100%;
+  }
+
+  .skills h1 {
+    font-size: 2em;
+  }
+
+  .skill {
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+
+  .frontend {
+    font-size: 24px;
+    letter-spacing: 0px;
+  }
+
+  .skillsInfo {
+    top: -2em;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  .skills h1 {
+    font-size: 3em;
+  }
+
+  .skill {
+    letter-spacing: 1px;
+  }
+
+  .frontend {
+    letter-spacing: 2px;
+  }
+
+  .skillsInfo {
+    top: -2.5em;
+  }
+}
+
+@media (min-width: 641px) {
+  .skills {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .skills h1 {
+    font-size: 4em;
+  }
+
+  .skill {
+    font-size: 1.2em;
+    max-width: 70%;
+  }
+
+  .frontend {
+    font-size: 2em;
+  }
+
+  .skillsInfo {
+    top: -3em;
+  }
+}
+
+@media (min-width: 767px) {
+  .skills {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .skills {
+    width: 50%;
+  }
+}
+
+@media (min-width: 961px) {
+  .skill {
+    font-size: 20px;
+  }
+}
