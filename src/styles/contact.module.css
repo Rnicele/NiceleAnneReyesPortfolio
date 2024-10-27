@@ -1,0 +1,23 @@
+.contact {
+  height: 80vh;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.titleComponent {
+  display: inline-flex;
+  width: inherit;
+}
+
+.title {
+  display: inline-flex;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}

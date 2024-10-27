@@ -6,6 +6,8 @@ import About from "./components/About";
 import React from "react";
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("");
@@ -18,6 +20,8 @@ function App() {
       <div className="container">
         <Home currentPage={currentPage} setCurrentPage={setCurrentPage} />
         <About currentPage={currentPage} setCurrentPage={setCurrentPage} />
+        <Projects currentPage={currentPage} setCurrentPage={setCurrentPage} />
+        <Contact currentPage={currentPage} setCurrentPage={setCurrentPage} />
       </div>
       {/* <Routes>
           <Route path="/" index element={<Home />} />
