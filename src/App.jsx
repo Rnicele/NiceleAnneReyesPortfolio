@@ -18,7 +18,7 @@ function App() {
       <div className="container">
         <Home currentPage={currentPage} setCurrentPage={setCurrentPage} />
         <About setCurrentPage={setCurrentPage} />
-        <Projects />
+        <Projects setCurrentPage={setCurrentPage} />
         <Contact />
       </div>
       {/* <Routes>
