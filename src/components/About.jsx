@@ -1,19 +1,12 @@
 import styles from "../styles/about.module.css";
 import React, { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
 import Education from "./Education";
 import Information from "./Information";
 import Skills from "./Skills";
-export default function About({ currentPage, setCurrentPage }) {
-  const [aboutSectionRef, aboutSectionInView] = useInView({ threshold: 0.5 });
-  useEffect(() => {
-    if (aboutSectionInView) {
-      setCurrentPage("#about");
-      window.location.hash = currentPage;
-    }
-  }, [aboutSectionInView, currentPage]);
+import ScrollButton from "./ScrollButton";
+export default function About({ setCurrentPage }) {
   return (
-    <div id={"about"} className={styles.about} ref={aboutSectionRef}>
+    <div id={"about"} className={styles.about}>
       <div className={styles.titleComponent}>
         <span className={styles.title}>ABOUT ME</span>
       </div>
@@ -24,6 +17,7 @@ export default function About({ currentPage, setCurrentPage }) {
         </div>
         <Skills />
       </div>
+      <ScrollButton setCurrentPage={setCurrentPage} forPage={"projects"} />
     </div>
   );
 }

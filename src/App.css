@@ -7,3 +7,19 @@ html {
 body {
   font-family: "Poppins", sans-serif !important;
 }
+
+#root
+  > div
+  > div.container
+  > div._introduction_a6ugy_1
+  > div._scrolldown_11fj4_1.about {
+  position: absolute;
+}
+
+#root
+  > div
+  > div.container
+  > div._introduction_a6ugy_1
+  > div._scrolldown_11fj4_1.projects {
+  position: relative;
+}

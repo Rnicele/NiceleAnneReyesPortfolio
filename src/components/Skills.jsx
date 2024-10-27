@@ -44,7 +44,7 @@ export default function Skills() {
         </div>
 
         <h2 className={styles.frontend}>SOFTWARE/TOOLS</h2>
-        <div className={styles.otherskill}>
+        <div>
           {tools.map((item, key) => (
             <span key={key} className={styles.skill}>
               {item}

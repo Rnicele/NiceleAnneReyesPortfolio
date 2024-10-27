@@ -1,11 +1,18 @@
 .scrolldown {
-  position: absolute;
   bottom: 50px;
   cursor: pointer;
 }
 
 .scrolldown img {
   width: 40px;
+}
+
+.about {
+  position: absolute;
+}
+
+.scrolldown.projects {
+  position: relative;
 }
 
 @media (min-width: 320px) {

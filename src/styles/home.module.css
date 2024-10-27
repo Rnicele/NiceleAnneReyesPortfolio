@@ -10,6 +10,16 @@
   display: block;
 }
 
+.scrolldown {
+  position: absolute;
+  bottom: 50px;
+  cursor: pointer;
+}
+
+.scrolldown img {
+  width: 40px;
+}
+
 @media screen and (min-width: 320px) {
   .introduction {
     display: block;
