@@ -18,7 +18,7 @@
   max-width: fit-content;
 }
 
-.frontend {
+.title {
   letter-spacing: 2px;
   font-size: 28px;
   margin: 0;
@@ -34,15 +34,15 @@
 }
 
 .listskill {
-  height: 175px;
   display: inline-flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-bottom: 9px;
+  /* margin-bottom: 9px; */
+  /* width: 16em; */
 }
 
 .otherskill {
-  margin-bottom: 20px;
+  /* width: 16em; */
 }
 
 @media (min-width: 320px) {
@@ -60,7 +60,7 @@
     letter-spacing: 0;
   }
 
-  .frontend {
+  .title {
     font-size: 24px;
     letter-spacing: 0px;
   }
@@ -68,6 +68,11 @@
   .skillsInfo {
     top: -2em;
     margin-left: 10px;
+  }
+
+  .listskill {
+    height: auto;
+    margin-bottom: 20px;
   }
 }
 
@@ -81,7 +86,7 @@
     letter-spacing: 1px;
   }
 
-  .frontend {
+  .title {
     letter-spacing: 2px;
   }
 
@@ -105,12 +110,17 @@
     max-width: 70%;
   }
 
-  .frontend {
+  .title {
     font-size: 2em;
   }
 
   .skillsInfo {
     top: -3em;
+  }
+
+  .listskill {
+    height: 172px;
+    margin-bottom: 0;
   }
 }
 

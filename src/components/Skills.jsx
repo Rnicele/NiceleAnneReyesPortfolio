@@ -25,7 +25,7 @@ export default function Skills() {
     <div className={styles.skills}>
       <h1>SKILLS</h1>
       <div className={styles.skillsInfo}>
-        <h2 className={styles.frontend}>FRONTEND</h2>
+        <h2 className={styles.title}>FRONTEND</h2>
         <div className={styles.listskill}>
           {frontend.map((item, key) => (
             <span key={key} className={styles.skill}>
@@ -34,8 +34,8 @@ export default function Skills() {
           ))}
         </div>
 
-        <h2 className={styles.frontend}>BACKEND</h2>
-        <div className={styles.otherskill}>
+        <h2 className={styles.title}>BACKEND</h2>
+        <div className={styles.listskill}>
           {backend.map((item, key) => (
             <span key={key} className={styles.skill}>
               {item}
@@ -43,8 +43,8 @@ export default function Skills() {
           ))}
         </div>
 
-        <h2 className={styles.frontend}>SOFTWARE/TOOLS</h2>
-        <div>
+        <h2 className={styles.title}>SOFTWARE/TOOLS</h2>
+        <div className={styles.otherskill}>
           {tools.map((item, key) => (
             <span key={key} className={styles.skill}>
               {item}
