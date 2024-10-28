@@ -12,13 +12,94 @@
 }
 
 .title {
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
   font-size: 2em;
   font-weight: 500;
 }
 
-.title {
+.title:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid;
+  margin: auto;
+  margin-left: 15px;
+}
+
+.contactMe {
+  width: 50vw;
+  display: inline-block;
+  align-content: center;
+}
+
+.contactMe h1 {
+  font-size: 4em;
+}
+
+.contactMe a {
+  background-color: transparent;
+  border-radius: 2em;
+  border: black 0.1rem solid;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  padding: 5px 30px;
+  margin-top: 10px;
+}
+
+.contactMe hr {
+  border: 1px solid black;
+  opacity: 1;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.contactContainer {
   display: flex;
-  flex-direction: row;
-  width: 100vw;
+  margin: 0 auto;
+  height: 85%;
+}
+
+@media (min-width: 320px) {
+  .contactMe {
+    width: 100vw;
+  }
+
+  .contactMe h1 {
+    font-size: 52px;
+  }
+
+  .contactMe hr {
+    width: 80%;
+  }
+
+  .contact {
+    padding: 0 2em;
+  }
+
+  .contact h2 {
+    font-size: 16px !important;
+  }
+}
+@media (min-width: 481px) {
+  .contact h2 {
+    font-size: 20px !important;
+  }
+}
+
+@media (min-width: 641px) {
+  .contact {
+    padding: 0;
+  }
+}
+@media (min-width: 767px) {
+  .contactMe {
+    width: 50vw;
+  }
+
+  .contactMe hr {
+    width: 55%;
+  }
 }

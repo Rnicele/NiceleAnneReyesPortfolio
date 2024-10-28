@@ -17,7 +17,7 @@ export default function HomeButton() {
       <a href={resume} target="_blank">
         <img src={cv} className={styles.icon} />
       </a>
-      <img src={darkmode} className={styles.icon} />
+      {/* <img src={darkmode} className={styles.icon} /> */}
     </div>
   );
 }

@@ -26,3 +26,21 @@
   margin: auto;
   margin-left: 15px;
 }
+
+@media (min-width: 320px) {
+  .projects {
+    padding: 0 2em;
+  }
+}
+
+@media (min-width: 481px) {
+  .projects {
+    padding: 0 2em;
+  }
+}
+
+@media (min-width: 641px) {
+  .projects {
+    padding: 0;
+  }
+}
